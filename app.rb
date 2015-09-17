@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  erb 'form'
+  erb :form
 end
 
 post "/submit" do
