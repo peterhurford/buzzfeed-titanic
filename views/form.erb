@@ -1,14 +1,61 @@
-<form action = "/submit" method = "post">
-  <!-- First second or third class -->
-  First name:<br>
-    <input type = "text" name = "firstname"><br>
-  Last name:<br>
-    <input type = "text" name = "lastname"><br>
+<head>
+        <title>Sinatra + Twitter Bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+        <div class="container">
 
-  Title:<br>
-  <select name = "title">
-    <option value="Mr.">Mr.</option>
-  </select>
+          <form action = "/submit" method = "post">
+            First name:<br>
+              <input type = "text" name = "firstname"><br>
+            Last name:<br>
+              <input type = "text" name = "lastname"><br><br>
 
-  <input type="submit" value="Will I Survive?">
-</form>
+            Age:<br>
+              <input type = "text" name = "age"><br><br>
+
+            Sex:<br>
+            <select name = "sex">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select><br><br>
+
+            Class:<br>
+            <select name = "pclass">
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+            </select><br><br>
+
+            Embarking from:<br>
+            <select name = "embarked">
+              <option value="Cherbourg">Cherbourg</option>
+              <option value="Queenstown">Queenstown</option>
+              <option value="Southhampton">Southhampton</option>
+            </select><br><br>
+
+            Title:<br>
+            <select name = "title">
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Ms.">Ms.</option>
+              <option value="Master">Master</option>
+              <option value="Rev.">Rev.</option>
+              <option value="Dr.">Dr.</option>
+            </select><br><br>
+
+            Traveling with # Siblings:<br>
+              <input type = "text" name = "sibsp"><br>
+            Traveling with # Parents or Children:<br>
+              <input type = "text" name = "parch"><br>
+            Traveling with Spouse?:<br>
+            <select name = "spouse">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select><br><br>
+
+            <input class="btn btn-default" type="submit" value="Will I Survive?">
+          </form>
+        </div>
+</body>
