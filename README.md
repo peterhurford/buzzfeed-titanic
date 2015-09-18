@@ -5,5 +5,7 @@ Takes data from the users via a form and sends it to a deployed [syberia model](
 ## To Run
 
 1.) Clone repo.
+
 2.) `ruby app.rb`
+
 3.) Navigate to `http://localhost:4567`
